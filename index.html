@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>STRYKER SPORTS | Cricket Store</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="A.1.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+ <a href="#home" class="brand-logo">
+
+
+    <img src="A.1.png" alt="STRYKER SPORTS Logo"style="height: 20px; width: auto;">
+    <div class="brand-text">
+      <strong>STRYKER</strong>
+      <span>SPORTS</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Bats</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="cart-btn" onclick="openCart()">
+    🛒 Cart <b id="cartCount">0</b>
+  </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <p class="small-title">
+      PREMIUM CRICKET EQUIPMENT
+    </p>
+
+    <h1>
+      PLAY BIG.<br>
+      <span>HIT HARD.</span>
+    </h1>
+
+    <p>
+      Premium cricket bats designed for power, control
+      and professional performance.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#products" class="primary-btn">
+        Shop Bats →
+      </a>
+
+      <a href="#about" class="secondary-btn">
+        Learn More
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="hero-bat">
+    <img src="A.2.png"
+    alt="premium Cricket Bat"
+    style="width: 100%;max-width: 450px;transform: rotate(-15deg);filter: drop-shadow(0 0 40px #aaff00);">
+  </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+
+  <div>
+    <span>🚚</span>
+    <h3>Fast Delivery</h3>
+    <p>Delivery across Pakistan</p>
+  </div>
+
+  <div>
+    <span>🛡️</span>
+    <h3>Premium Quality</h3>
+    <p>Quality checked products</p>
+  </div>
+
+  <div>
+    <span>💳</span>
+    <h3>Easy Payment</h3>
+    <p>Cash & online payment</p>
+  </div>
+
+  <div>
+    <span>💬</span>
+    <h3>WhatsApp Support</h3>
+    <p>Quick customer support</p>
+  </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products-section" id="products">
+
+  <div class="section-heading">
+
+    <p>OUR COLLECTION</p>
+
+    <h2>Premium Cricket Bats</h2>
+
+    <span>
+      Choose your weapon and dominate the game.
+    </span>
+
+  </div>
+
+
+  <div class="filters">
+
+    <input
+      type="text"
+      id="search"
+      placeholder="🔍 Search cricket bat..."
+      onkeyup="searchProducts()"
+    >
+
+    <select
+      id="category"
+      onchange="filterProducts()"
+    >
+    <option value="All">All</option>
+    <option value="English Willow">English Willow</option>
+    <option value="Kashmir Willow">Kashmir Willow</option>
+    </select>
+  </div>
+<div class="products-grid">
+
+    <div class="product-card" data-category="English Willow">
+      <img src="A.5.jpg" alt="Bat">
+      <p class="tag">English Willow</p>
+      <h3>Stryker Blue Edition</h3>
+      <p class="price">Rs. 1,500</p>
+      <button class="add-btn">Add to cart</button>
+    </div>
+
+    <div class="product-card" data-category="Kashmir Willow">
+      <img src="A.3.jpg" alt="Bat">
+      <p class="tag">Kashmir Willow</p>
+      <h3>Street King Kashmir</h3>
+      <p class="price">Rs. 8,999</p>
+      <button class="add-btn">Add To Cart</button>
+    </div>
+
+    <div class="product-card" data-category="English Willow">
+      <img src="A.4.jpg" alt="Bat">
+      <p class="tag">English Willow</p>
+      <h3>Legend Premium Bat</h3>
+      <p class="price">Rs. 10,999</p>
+      <button class="add-btn">Add To Cart</button>
+    </div>
+
+    <div class="product-card" data-category="Kashmir Willow">
+      <img src="A.6.jpg" alt="Bat">
+      <p class="tag">Kashmir Willow</p>
+      <h3>Power Shot Bat</h3>
+      <p class="price">Rs. 6,999</p>
+      <button class="add-btn">Add To Cart</button>
+    </div>
+
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="A.5.jpg" alt="cricket player">
+  </div>
+
+  <div class="about-content">
+    <p class="small-title">WHY STRYKER SPORTS?</p>
+    <h2>Built For Players<br>Who Want More.</h2>
+    <p>We provide premium cricket bats for beginners, club players and professionals. Every bat is selected for balance, power and quality.</p>
+   
+    <div class="stats">
+      <div class="stat-box"><h3>500+</h3><p>Bats Sold</p></div>
+      <div class="stat-box"><h3>4.9★</h3><p>Customer Rating</p></div>
+      <div class="stat-box"><h3>100%</h3><p>Quality</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+
+  <div>
+
+    <p>GET IN TOUCH</p>
+
+    <h2>Ready To Play?</h2>
+
+    <span>
+      Contact us for orders and product information.
+    </span>
+
+  </div>
+
+
+  <a
+    class="whatsapp-btn"
+    href="https://wa.me/923483336307"
+    target="_blank"
+  >
+    💬 Order on WhatsApp
+  </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact"class="footer">
+  <div class="footer-container">
+    <!--colum 1:Logo + About-->
+    <div class="footer-col">
+ <a href="#home" class="footer-logo">
+  <img src="A.1.png"
+  alt="STRYKER SPORTS Logo"
+    >
+    <div>
+      <strong>STRYKER</strong>
+      <span>SPORTS</span>
+    </div>
+
+  </a>
+
+
+  <p>
+    Premium Cricket Equipment Store
+  </p>
+<p>Built for player who want more.Quality bats for every level.</p>
+<!--column 2:Quick Links-->
+<div class="footer-col">
+  <h4>Quick Links</h4>
+  <a href="#home">Home</a>
+   <a href="#bats">Bats</a>
+     <a href="#about">About</a>
+       <a href="#contact">Contact</a>
+       </div>
+       <!--Column 3 contact-->
+       <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p> karachi,Pakistan</p>
+        <p> whatsapp:+93483336307</p>
+      <p>Toufiqkas@outlook.com</p>
+  <p>
+    © 2026 STRYKER SPORTS. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+<div
+  class="overlay"
+  id="overlay"
+  onclick="closeCart()">
+</div>
+
+
+<div
+  class="cart-panel"
+  id="cartPanel">
+
+  <div class="cart-header">
+
+    <h2>Your Cart</h2>
+
+    <button onclick="closeCart()">
+      ✕
+    </button>
+
+  </div>
+
+
+  <div id="cartItems"></div>
+
+
+  <div class="cart-total">
+
+    <span>Total</span>
+
+    <strong id="cartTotal">
+      Rs. 0
+    </strong>
+
+  </div>
+
+
+  <button
+    class="checkout-btn"
+    onclick="openCheckout()"
+  >
+    Proceed to Checkout
+  </button>
+
+</div>
+
+
+<!-- ================= CHECKOUT ================= -->
+<div
+  class="checkout-modal"
+  id="checkoutModal">
+
+  <div class="checkout-box">
+
+    <button
+      class="close-checkout"
+      onclick="closeCheckout()"
+    >
+      ✕
+    </button>
+
+
+    <h2>Checkout</h2>
+
+    <p>
+      Enter your delivery information.
+    </p>
+
+
+    <form onsubmit="placeOrder(event)">
+
+      <input
+        id="customerName"
+        type="text"
+        placeholder="Full Name"
+        required
+      >
+
+
+      <input
+        id="customerPhone"
+        type="tel"
+        placeholder="Phone Number"
+        required
+      >
+
+
+      <input
+        id="customerCity"
+        type="text"
+        placeholder="City"
+        required
+      >
+
+
+      <textarea
+        id="customerAddress"
+        placeholder="Complete Delivery Address"
+        required
+      ></textarea>
+
+
+      <select
+        id="paymentMethod"
+        required
+      >
+
+        <option value="">
+          Select Payment Method
+        </option>
+
+        <option>
+          Cash on Delivery
+        </option>
+
+        <option>
+          JazzCash
+        </option>
+
+        <option>
+          EasyPaisa
+        </option>
+
+        <option>
+          Bank Transfer
+        </option>
+
+      </select>
+
+
+      <button
+        type="submit"
+        class="primary-btn"
+      >
+        Place Order
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>>
